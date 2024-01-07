@@ -7,6 +7,10 @@ fi
 
 echo "Adding users and groups"
 
-groupadd -g 2000 media_tools
+groupadd -g 3000 mc_server
 
-useradd -u 2000 -g media_tools plex -s /bin/bash
+useradd -u 3000 -g mc_server mc_server -s /bin/bash
+usermod -a -G media_tools mc_server
+
+
+mkdir -p /data/minecraft

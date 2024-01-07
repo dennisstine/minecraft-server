@@ -4,17 +4,17 @@ services:
   minecraft:
     container_name: mc-server
     hostname: plex-server
-    image: itzg/minecraft-bedrock-server:latest
+    image: itzg/minecraft-server:latest
     volumes:
-      - .modpacks:/modpacks:ro
+      - ./.mods/cf-mods.txt:/extras/cf-mods.txt
       - /data/minecraft:/data
     environment:
       EULA: "true"
-      TYPE: CURSEFORGE
-      CF_SERVER_MOD: /modpacks/SIMPLE-SERVER-FILES-0.3.20.zip
-    #      CF_SERVER_MOD: /modpacks/createlive3serverfiles+1.4.2.zip
-    #      CF_SERVER_MOD: /modpacks/Valhelsia+3-3.5.1-SERVER.zip
-    #      CF_SERVER_MOD: https://media.forgecdn.net/files/3012/800/SkyFactory-4_Server_4.2.2.zip
-    #      CF_SERVER_MOD: /modpacks/${MODPACK:-SkyFactory_4_Server_4.1.0.zip}
+      TYPE: "CURSEFORGE"
+      CF_API_KEY: "f21d7e7c-7833-4d79-a6cc-80444f5e15cb"
+      PLUGINS: |
+        https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
+        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
     ports:
       - "25565:25565"
+      - "19132:19132/udp"

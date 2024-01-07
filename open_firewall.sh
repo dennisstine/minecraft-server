@@ -1,6 +1,6 @@
 # open the minecraft docker port
 sudo firewall-cmd --zone=FedoraServer --permanent --add-port 25565/tcp
-sudo firewall-cmd --zone=FedoraServer --permanent --add-port 25565/udp
+sudo firewall-cmd --zone=FedoraServer --permanent --add-port 19132/udp
 
 sudo firewall-cmd --reload
 

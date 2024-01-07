@@ -9,8 +9,8 @@ services:
       - ./.mods/cf-mods.txt:/extras/cf-mods.txt
       - /data/minecraft:/data
     environment:
-      PUID: 3000
-      PGID: 3000
+      UID: 3000
+      GID: 3000
       TZ: America/Chicago
       EULA: "true"
       TYPE: "FORGE"

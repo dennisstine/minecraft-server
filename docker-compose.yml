@@ -13,7 +13,7 @@ services:
       PGID: 3000
       TZ: America/Chicago
       EULA: "true"
-      TYPE: "AUTO_CURSEFORGE"
+      TYPE: "FORGE"
       CF_API_KEY: "f21d7e7c-7833-4d79-a6cc-80444f5e15cb"
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot

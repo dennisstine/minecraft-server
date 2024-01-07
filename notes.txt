@@ -1,0 +1,4 @@
+https://docker-minecraft-server.readthedocs.io/en/latest/
+
+docker exec -i mc-server rcon-cli
+

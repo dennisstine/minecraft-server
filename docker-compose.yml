@@ -12,9 +12,12 @@ services:
       UID: 3000
       GID: 3000
       TZ: America/Chicago
+      MOTD: "Welcome to Catlas's server"
       EULA: "true"
       TYPE: "FORGE"
       CF_API_KEY: "f21d7e7c-7833-4d79-a6cc-80444f5e15cb"
+      OPS: |
+        MiniNinja88
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
